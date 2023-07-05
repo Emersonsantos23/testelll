@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="IMG/icon-site.png">
+    <title>Entrar | Sport GDias</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/f391c7d8d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <script>
+        function togglePasswordVisibility() {
+          var passwordInput = document.getElementById("password");
+          var passwordToggle = document.getElementById("password-toggle");
+    
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            passwordToggle.textContent = "key";
+          } else {
+            passwordInput.type = "password";
+            passwordToggle.textContent = "key_off";
+          }
+        }
+      </script>
+
+</head>
+<body>
+
+<div class="b1-lg">
+    <div class="form-image">
+    <img src="IMG/gif-lg.svg">
+</div>
+    <div class="form-cad">
+      
+        <img class="logo" src="IMG/logo-site-black.png">
+
+<form action="processar_formulario.php" method="POST">
+            <div class="input-group-cad">
+                <div class="input-cad">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="E-mail ou nome de usuário">
+                </div>
+
+                <div class="input-cad">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Senha">
+                    <button id="password-toggle" onclick="togglePasswordVisibility()" class="show-p-btn material-symbols-outlined">key_off</button>
+                </div>
+                <p class="es-info">Esqueceu a senha? <a href="forgot-p-page.html">Clique aqui!</a></p>
+            </div>
+            
+            <div class="">
+               <button class="btn-cad"> <a href="#">Acessar conta</a></button>
+            </div>
+
+        <div class="content-sgup">
+            <p>Você não possui conta?</p>
+
+            <div class="btn-sgup">
+                <a href="sign-up-page.html">Criar conta</a>
+            </div>
+        </div>
+        </form>
+    </div>
+    
+</div>
+    
+</body>
+</html>
