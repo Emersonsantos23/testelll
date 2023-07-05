@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    border: 0;
     font-family: 'Inter', sans-serif;
 }
 
 body {
-    width: 100%;
+    width: 100%;,
     height: auto;
     display: flex;
     justify-content: center;
@@ -37,6 +37,7 @@ body {
 
 .logo{
     width: 36%;
+    padding: 20px;
 
 }
 
@@ -225,41 +226,40 @@ body {
 
 @media screen and (max-width: 1330px) {
     .form-image {
-        display: none;
-    }
+    width: 100%;
+  text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-image img {
+    width: 20rem;
+}
     .b1-lg {
+        display: block;
         width: 50%;
         height: auto;
+        margin: 2px;
     }
     .form-cad {
         width: 100%;
         height: auto;
     }
-    .body {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:  #39a3ea;
-}
+
 }
 
 @media screen and (max-width: 1064px) {
+    .form-image {
+        display: block;
+      
+    }
     .b1-lg {
-        width:40%;
+        width:90%;
        
     }
     .form-cad {
         width: 100%;
         height: auto;
     }
-     .body {
-  
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:  #39a3ea;
-       }
+     
 }
